@@ -13,3 +13,22 @@ const logError = createLogger('ERROR')
 logInfo("This is info 1") // INFO
 logError("This is error 1") // ERROR
 logInfo("This is info 2") // INFO
+
+
+function createFunctions() {
+    let funcs = [];
+    let a = 0;
+ 
+    for (let i = 0; i < 3; i++) {
+        funcs.push(function() {
+            console.log(a);
+        });
+        a+=1;
+    }
+    return funcs;
+}
+
+const functions = createFunctions();
+functions[0](); // In ra 0
+functions[1](); // In ra 1
+functions[2]();
