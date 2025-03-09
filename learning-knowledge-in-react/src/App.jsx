@@ -1,11 +1,12 @@
 import './App.css'
-import Closure from './lessons/closures/Closure'
+import DebounceInput from './lessons/eventLoop/DebounceInput'
+import Timer from './lessons/eventLoop/Timer'
 
 function App() {
 
   return (
     <>
-      <Closure />
+      <DebounceInput />
     </>
   )
 }
